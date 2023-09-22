@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 const MyApp = () => {
   return (
       <>
-        <h1>MyAppPage</h1>
+        <h1 className="">MyAppPage</h1>
       </>
   )
 }
