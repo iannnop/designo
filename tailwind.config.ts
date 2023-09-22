@@ -1,28 +1,40 @@
-import type { Config } from 'tailwindcss'
-
-const config: Config = {
+module.exports = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./src/modules/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      transitionProperty: {
+        "width": "width",
+        "spacing": 'margin, padding',
       },
-      colors: {
-        'peach':'#E7816B',
-        'light-peach':'#FFAD9B',
-        'black':'#1D1C1E',
-        'dark-grey':'#333136',
-        'white':'#FFFFFF',
-        'light-grey':'#F1F3F5',
-      }
+      maxWidth: {
+        "8xl": "100rem",
+      },
+      screens: {
+        "2xsmall": "320px",
+        "xsmall": "512px",
+        "small": "1024px",
+        "medium": "1280px",
+        "large": "1440px",
+        "xlarge": "1680px",
+        "2xlarge": "1920px",
+      },
+      fontFamily: {
+        sans: [
+          "Inter",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "Helvetica Neue",
+          "Ubuntu",
+          "sans-serif",
+        ],
+      },
     },
   },
   plugins: [],
 }
-export default config
