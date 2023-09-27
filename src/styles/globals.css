@@ -18,6 +18,11 @@
 }
 
 @layer utilities {
+
+  .bg-blackwhite {
+    background: linear-gradient(to bottom,white 0%,white 50%,rgb(29, 28, 30) 50%,rgb(29, 28, 30) 100%);
+  }
+
   /* Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
     display: none;
