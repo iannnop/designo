@@ -1,16 +1,22 @@
+import AboutUs from "@modules/home/components/about-us"
+import FeaturedProjects from "@modules/home/components/featured-projects"
+import Hero from "@modules/home/components/hero"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "MyApp",
+  title: "Designo",
   description: "description"
 }
 
-const MyApp = () => {
+const Home = () => {
   return (
       <>
-        <h1 className="">MyAppPage</h1>
+        <Hero />
+        <FeaturedProjects />
+        <AboutUs />
       </>
+      
   )
 }
 
-export default MyApp
+export default Home

@@ -1,7 +1,7 @@
 import "styles/globals.css"
 import { Jost } from 'next/font/google'
 
-const jost = Jost({ subsets: ['latin'], weight: ['400','500'] })
+const jost = Jost({ subsets: ['latin'], weight: ['400','500','700'] })
 
 export default function RootLayout({
   children,
@@ -10,7 +10,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="max-w-7xl mx-auto">
+      <body className="max-w-5xl mx-auto">
         <main className={jost.className}>
           {children}
         </main>
